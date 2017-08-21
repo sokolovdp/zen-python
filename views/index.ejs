@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="main-html"> 
+    <head id="head">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!--  bootstrap styled website to be responsive on mobile -->
+        <title>Zen of Python</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://use.fontawesome.com/b02e3ddb3a.js"></script>
+        <link rel="stylesheet" type="text/css"  href="zen.css">
+    </head>
+    <body class="main-body" background="<%= image %>">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand"  href="http://www.sokolovdp.info">
+                <span style="font-size: 18px; display: inline;"><img style="width: 18px;" src="favicon.ico"/>My Blog</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a id="mycontact" href="mailto:sokolovdp@gmail.com">Contact me &nbsp; <i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="day">Zen of Day</h3>
+                    <hr class="divider">
+                    <h1 class="phrase"><%= phrase %></h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
